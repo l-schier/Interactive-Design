@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hamsterstaskcopies xmlns="http://www.irit.fr/ICS/HAMSTERSTASKCOPIES/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2" xsi:schemaLocation="http://www.irit.fr/ICS/HAMSTERSTASKCOPIES/2.0 https://www.irit.fr/recherches/ICS/xsd/hamsters/taskcopies/v2/v2.xsd">
+    <taskcopy taskcopyname="Log in" taskcopytype="abstract">
+        <hamstersmodel hamstersmodelname="Log in" role="Default">
+            <task taskid="t5"/>
+        </hamstersmodel>
+        <hamstersmodel hamstersmodelname="Sign Up" role="Default">
+            <task taskid="t2"/>
+        </hamstersmodel>
+    </taskcopy>
+    <taskcopy taskcopyname="Sign Up" taskcopytype="abstract">
+        <hamstersmodel hamstersmodelname="Sign Up" role="Default">
+            <task taskid="t1"/>
+        </hamstersmodel>
+        <hamstersmodel hamstersmodelname="Sign Up" role="Default">
+            <task taskid="t3"/>
+        </hamstersmodel>
+    </taskcopy>
+    <taskcopy taskcopyname="Insert Text [textfield, textcontent]]" taskcopytype="component"/>
+    <taskcopy taskcopyname="Create Post" taskcopytype="abstract">
+        <hamstersmodel hamstersmodelname="Create Post" role="Default">
+            <task taskid="t1"/>
+        </hamstersmodel>
+        <hamstersmodel hamstersmodelname="Sign Up" role="Default">
+            <task taskid="t5"/>
+            <task taskid="t8"/>
+        </hamstersmodel>
+    </taskcopy>
+</hamsterstaskcopies>

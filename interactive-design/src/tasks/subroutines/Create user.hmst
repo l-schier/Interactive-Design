@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hamsters xmlns="http://www.irit.fr/ICS/HAMSTERS/7.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Create user" version="7" xsi:schemaLocation="http://www.irit.fr/ICS/HAMSTERS/7.0 https://www.irit.fr/recherches/ICS/xsd/hamsters/v7/v7.xsd">
+    <nodes>
+        <task copy="false" id="t1" type="subroutine">
+            <graphics>
+                <graphic folded="false">
+                    <position x="337" y="83"/>
+                </graphic>
+            </graphics>
+            <operator id="o1" type="enable" knowledgeproceduraltype="">
+                <graphics>
+                    <graphic>
+                        <position x="360" y="163"/>
+                    </graphic>
+                </graphics>
+                <task copy="false" id="t2" type="interactive_input" knowledgeproceduraltype="">
+                    <graphics>
+                        <graphic folded="false">
+                            <position x="163" y="243"/>
+                        </graphic>
+                    </graphics>
+                    <description>Press Create profile</description>
+                    <xlproperties/>
+                    <coreproperties>
+                        <categories>
+                            <category name="simulation">
+<property name="duration" value="false"/>
+<property name="iterative" value="0"/>
+<property name="optional" value="false"/>
+<property name="minexectime" value="0"/>
+<property name="maxexectime" value="0"/>
+                            </category>
+                            <category name="authority">
+<property name="responsibility" type="java.lang.Boolean" value="false"/>
+<property name="authority" type="java.lang.Boolean" value="false"/>
+                            </category>
+                            <category name="criticality">
+<property name="criticality" type="java.lang.Integer" value="0"/>
+                            </category>
+                        </categories>
+                    </coreproperties>
+                </task>
+                <task copy="false" id="t3" type="system" knowledgeproceduraltype="">
+                    <graphics>
+                        <graphic folded="false">
+                            <position x="279" y="243"/>
+                        </graphic>
+                    </graphics>
+                    <description>Save user credentials</description>
+                    <xlproperties/>
+                    <coreproperties>
+                        <categories>
+                            <category name="simulation">
+<property name="duration" value="false"/>
+<property name="iterative" value="0"/>
+<property name="optional" value="false"/>
+<property name="minexectime" value="0"/>
+<property name="maxexectime" value="0"/>
+                            </category>
+                            <category name="authority">
+<property name="responsibility" type="java.lang.Boolean" value="false"/>
+<property name="authority" type="java.lang.Boolean" value="false"/>
+                            </category>
+                            <category name="criticality">
+<property name="criticality" type="java.lang.Integer" value="0"/>
+                            </category>
+                        </categories>
+                    </coreproperties>
+                </task>
+                <task copy="false" id="t4" type="interactive_output" knowledgeproceduraltype="">
+                    <graphics>
+                        <graphic folded="false">
+                            <position x="404" y="243"/>
+                        </graphic>
+                    </graphics>
+                    <description>Redirect user to login page</description>
+                    <xlproperties/>
+                    <coreproperties>
+                        <categories>
+                            <category name="simulation">
+<property name="duration" value="false"/>
+<property name="iterative" value="0"/>
+<property name="optional" value="false"/>
+<property name="minexectime" value="0"/>
+<property name="maxexectime" value="0"/>
+                            </category>
+                            <category name="authority">
+<property name="responsibility" type="java.lang.Boolean" value="false"/>
+<property name="authority" type="java.lang.Boolean" value="false"/>
+                            </category>
+                            <category name="criticality">
+<property name="criticality" type="java.lang.Integer" value="0"/>
+                            </category>
+                        </categories>
+                    </coreproperties>
+                </task>
+            </operator>
+            <description>Create user</description>
+            <xlproperties/>
+            <coreproperties>
+                <categories>
+                    <category name="simulation">
+                        <property name="duration" value="false"/>
+                        <property name="iterative" value="0"/>
+                        <property name="optional" value="false"/>
+                        <property name="minexectime" value="0"/>
+                        <property name="maxexectime" value="0"/>
+                    </category>
+                    <category name="authority">
+                        <property name="responsibility" type="java.lang.Boolean" value="false"/>
+                        <property name="authority" type="java.lang.Boolean" value="false"/>
+                    </category>
+                    <category name="criticality">
+                        <property name="criticality" type="java.lang.Integer" value="0"/>
+                    </category>
+                </categories>
+            </coreproperties>
+        </task>
+    </nodes>
+    <datas>
+        <data type="objectdod" id="a1">
+            <description>Name</description>
+            <properties/>
+            <link feature="none" sourceid="t3" type="ACCESS_TYPE" value="">
+                <points/>
+            </link>
+            <graphics>
+                <graphic>
+                    <position x="100" y="387"/>
+                </graphic>
+            </graphics>
+        </data>
+        <data type="objectdod" id="a2">
+            <description>Username</description>
+            <properties/>
+            <link feature="none" sourceid="t3" type="ACCESS_TYPE" value="">
+                <points/>
+            </link>
+            <graphics>
+                <graphic>
+                    <position x="262" y="387"/>
+                </graphic>
+            </graphics>
+        </data>
+        <data type="objectdod" id="a3">
+            <description>Password</description>
+            <properties/>
+            <link feature="none" sourceid="t3" type="ACCESS_TYPE" value="">
+                <points/>
+            </link>
+            <graphics>
+                <graphic>
+                    <position x="449" y="387"/>
+                </graphic>
+            </graphics>
+        </data>
+    </datas>
+    <errors/>
+    <security/>
+    <parameters/>
+    <instancevalues/>
+    <parametersdefinitions/>
+    <mainproperties>
+        <property name="timemanagement" type="fr.irit.ics.circus.hamsters.api.TimeManagement" value="NORMAL"/>
+    </mainproperties>
+</hamsters>

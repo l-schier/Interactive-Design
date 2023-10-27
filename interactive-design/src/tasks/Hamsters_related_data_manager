@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hamstersrelateddata xmlns="http://www.irit.fr/ICS/HAMSTERSRELATEDDATA/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1" xsi:schemaLocation="http://www.irit.fr/ICS/HAMSTERSRELATEDDATA/1.0 https://www.irit.fr/recherches/ICS/xsd/hamsters/relateddata/v1/v1.xsd">
+    <relateddata type="Information" description="Password">
+        <data dataname="Password" oldname="Password" hamstersmodelname="Log in" role="Default"/>
+        <data dataname="Password" oldname="Password" hamstersmodelname="Insert Password" issubroutine="true"/>
+    </relateddata>
+    <relateddata type="Information" description="Username">
+        <data dataname="Username" oldname="Username" hamstersmodelname="Validate Log in" issubroutine="true"/>
+        <data dataname="Username" oldname="Username" hamstersmodelname="Log in" role="Default"/>
+        <data dataname="Username" oldname="Username" hamstersmodelname="Insert Username" issubroutine="true"/>
+    </relateddata>
+    <relateddata type="Software Object" description="Password">
+        <data dataname="Password" oldname="Password" hamstersmodelname="Validate Log in" issubroutine="true"/>
+        <data dataname="Password" oldname="Password" hamstersmodelname="Log in" role="Default"/>
+        <data dataname="Password" oldname="Password" hamstersmodelname="Insert Password" issubroutine="true"/>
+    </relateddata>
+    <relateddata type="Software Object" description="Username">
+        <data dataname="Username" oldname="Username" hamstersmodelname="Insert Username" issubroutine="true"/>
+        <data dataname="Username" oldname="Username" hamstersmodelname="Log in" role="Default"/>
+        <data dataname="Username" oldname="Username" hamstersmodelname="Validate Log in" issubroutine="true"/>
+    </relateddata>
+    <relateddata type="Software Object" description="Name">
+        <data dataname="Name" oldname="Name" hamstersmodelname="Create user" issubroutine="true"/>
+        <data dataname="Name" oldname="Name" hamstersmodelname="Insert Name" issubroutine="true"/>
+        <data dataname="Name" oldname="Name" hamstersmodelname="Sign Up" role="Default"/>
+    </relateddata>
+    <relateddata type="Software Object" description="Username">
+        <data dataname="Username" oldname="Username" hamstersmodelname="Create user" issubroutine="true"/>
+        <data dataname="Username" oldname="Username" hamstersmodelname="Create username" issubroutine="true"/>
+        <data dataname="Username" oldname="Username" hamstersmodelname="Sign Up" role="Default"/>
+    </relateddata>
+    <relateddata type="Software Object" description="Password">
+        <data dataname="Password" oldname="Password" hamstersmodelname="Create user" issubroutine="true"/>
+        <data dataname="Password" oldname="Password" hamstersmodelname="Create password" issubroutine="true"/>
+        <data dataname="Password" oldname="Password" hamstersmodelname="Sign Up" role="Default"/>
+    </relateddata>
+</hamstersrelateddata>

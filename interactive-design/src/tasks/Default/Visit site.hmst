@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hamsters xmlns="http://www.irit.fr/ICS/HAMSTERS/7.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Sign Up" version="7" xsi:schemaLocation="http://www.irit.fr/ICS/HAMSTERS/7.0 https://www.irit.fr/recherches/ICS/xsd/hamsters/v7/v7.xsd">
+    <nodes>
+        <task copy="false" id="t1" type="abstract">
+            <graphics>
+                <graphic folded="false">
+                    <position x="381" y="-156"/>
+                </graphic>
+            </graphics>
+            <operator id="o1" type="choice" knowledgeproceduraltype="">
+                <graphics>
+                    <graphic>
+                        <position x="394" y="-76"/>
+                    </graphic>
+                </graphics>
+                <task copy="true" id="t2" type="abstract" knowledgeproceduraltype="">
+                    <graphics>
+                        <graphic folded="false">
+                            <position x="217" y="4"/>
+                        </graphic>
+                    </graphics>
+                    <operator id="o3" type="choice" knowledgeproceduraltype="">
+                        <graphics>
+                            <graphic>
+<position x="230" y="84"/>
+                            </graphic>
+                        </graphics>
+                        <task copy="true" id="t5" type="abstract" knowledgeproceduraltype="">
+                            <graphics>
+<graphic folded="false">
+    <position x="-123" y="164"/>
+</graphic>
+                            </graphics>
+                            <description>Create Post</description>
+                            <xlproperties/>
+                            <coreproperties>
+<categories>
+    <category name="simulation">
+        <property name="duration" value="false"/>
+        <property name="iterative" value="0"/>
+        <property name="optional" value="false"/>
+        <property name="minexectime" value="0"/>
+        <property name="maxexectime" value="0"/>
+    </category>
+    <category name="authority">
+        <property name="responsibility" type="java.lang.Boolean" value="false"/>
+        <property name="authority" type="java.lang.Boolean" value="false"/>
+    </category>
+    <category name="criticality">
+        <property name="criticality" type="java.lang.Integer" value="0"/>
+    </category>
+</categories>
+                            </coreproperties>
+                        </task>
+                        <task copy="false" id="t7" type="abstract" knowledgeproceduraltype="">
+                            <graphics>
+<graphic folded="false">
+    <position x="-52" y="164"/>
+</graphic>
+                            </graphics>
+                            <description>Report Post</description>
+                            <xlproperties/>
+                            <coreproperties>
+<categories>
+    <category name="simulation">
+        <property name="duration" value="false"/>
+        <property name="iterative" value="0"/>
+        <property name="optional" value="false"/>
+        <property name="minexectime" value="0"/>
+        <property name="maxexectime" value="0"/>
+    </category>
+    <category name="authority">
+        <property name="responsibility" type="java.lang.Boolean" value="false"/>
+        <property name="authority" type="java.lang.Boolean" value="false"/>
+    </category>
+    <category name="criticality">
+        <property name="criticality" type="java.lang.Integer" value="0"/>
+    </category>
+</categories>
+                            </coreproperties>
+                        </task>
+                        <task copy="false" id="t6" type="abstract" knowledgeproceduraltype="">
+                            <graphics>
+<graphic folded="false">
+    <position x="19" y="164"/>
+</graphic>
+                            </graphics>
+                            <description>Delete Post</description>
+                            <xlproperties/>
+                            <coreproperties>
+<categories>
+    <category name="simulation">
+        <property name="duration" value="false"/>
+        <property name="iterative" value="0"/>
+        <property name="optional" value="false"/>
+        <property name="minexectime" value="0"/>
+        <property name="maxexectime" value="0"/>
+    </category>
+    <category name="authority">
+        <property name="responsibility" type="java.lang.Boolean" value="false"/>
+        <property name="authority" type="java.lang.Boolean" value="false"/>
+    </category>
+    <category name="criticality">
+        <property name="criticality" type="java.lang.Integer" value="0"/>
+    </category>
+</categories>
+                            </coreproperties>
+                        </task>
+                        <task copy="false" id="t15" type="abstract" knowledgeproceduraltype="">
+                            <graphics>
+<graphic folded="false">
+    <position x="89" y="164"/>
+</graphic>
+                            </graphics>
+                            <operator id="o4" type="choice" knowledgeproceduraltype="">
+<graphics>
+    <graphic>
+        <position x="102" y="244"/>
+    </graphic>
+</graphics>
+<task copy="false" id="t11" type="abstract" knowledgeproceduraltype="">
+    <graphics>
+        <graphic folded="false">
+            <position x="61" y="324"/>
+        </graphic>
+    </graphics>
+    <description>upvote Post</description>
+    <xlproperties/>
+    <coreproperties>
+        <categories>
+            <category name="simulation">
+                <property name="duration" value="false"/>
+                <property name="iterative" value="0"/>
+                <property name="optional" value="false"/>
+                <property name="minexectime" value="0"/>
+                <property name="maxexectime" value="0"/>
+            </category>
+            <category name="authority">
+                <property name="responsibility" type="java.lang.Boolean" value="false"/>
+                <property name="authority" type="java.lang.Boolean" value="false"/>
+            </category>
+            <category name="criticality">
+                <property name="criticality" type="java.lang.Integer" value="0"/>
+            </category>
+        </categories>
+    </coreproperties>
+</task>
+<task copy="false" id="t14" type="abstract" knowledgeproceduraltype="">
+    <graphics>
+        <graphic folded="false">
+            <position x="131" y="324"/>
+        </graphic>
+    </graphics>
+    <description>Downvote Post</description>
+    <xlproperties/>
+    <coreproperties>
+        <categories>
+            <category name="simulation">
+                <property name="duration" value="false"/>
+                <property name="iterative" value="0"/>
+                <property name="optional" value="false"/>
+                <property name="minexectime" value="0"/>
+                <property name="maxexectime" value="0"/>
+            </category>
+            <category name="authority">
+                <property name="responsibility" type="java.lang.Boolean" value="false"/>
+                <property name="authority" type="java.lang.Boolean" value="false"/>
+            </category>
+            <category name="criticality">
+                <property name="criticality" type="java.lang.Integer" value="0"/>
+            </category>
+        </categories>
+    </coreproperties>
+</task>
+                            </operator>
+                            <description>View post</description>
+                            <xlproperties/>
+                            <coreproperties>
+<categories>
+    <category name="simulation">
+        <property name="duration" value="false"/>
+        <property name="iterative" value="0"/>
+        <property name="optional" value="false"/>
+        <property name="minexectime" value="0"/>
+        <property name="maxexectime" value="0"/>
+    </category>
+    <category name="authority">
+        <property name="responsibility" type="java.lang.Boolean" value="false"/>
+        <property name="authority" type="java.lang.Boolean" value="false"/>
+    </category>
+    <category name="criticality">
+        <property name="criticality" type="java.lang.Integer" value="0"/>
+    </category>
+</categories>
+                            </coreproperties>
+                        </task>
+                        <task copy="false" id="t16" type="abstract" knowledgeproceduraltype="">
+                            <graphics>
+<graphic folded="false">
+    <position x="155" y="164"/>
+</graphic>
+                            </graphics>
+                            <operator id="o5" type="choice" knowledgeproceduraltype="">
+<graphics>
+    <graphic>
+        <position x="180" y="244"/>
+    </graphic>
+</graphics>
+<task copy="false" id="t12" type="abstract" knowledgeproceduraltype="">
+    <graphics>
+        <graphic folded="false">
+            <position x="219" y="324"/>
+        </graphic>
+    </graphics>
+    <description>upvote Comment</description>
+    <xlproperties/>
+    <coreproperties>
+        <categories>
+            <category name="simulation">
+                <property name="duration" value="false"/>
+                <property name="iterative" value="0"/>
+                <property name="optional" value="false"/>
+                <property name="minexectime" value="0"/>
+                <property name="maxexectime" value="0"/>
+            </category>
+            <category name="authority">
+                <property name="responsibility" type="java.lang.Boolean" value="false"/>
+                <property name="authority" type="java.lang.Boolean" value="false"/>
+            </category>
+            <category name="criticality">
+                <property name="criticality" type="java.lang.Integer" value="0"/>
+            </category>
+        </categories>
+    </coreproperties>
+</task>
+<task copy="false" id="t13" type="abstract" knowledgeproceduraltype="">
+    <graphics>
+        <graphic folded="false">
+            <position x="319" y="324"/>
+        </graphic>
+    </graphics>
+    <description>Downvote Comment</description>
+    <xlproperties/>
+    <coreproperties>
+        <categories>
+            <category name="simulation">
+                <property name="duration" value="false"/>
+                <property name="iterative" value="0"/>
+                <property name="optional" value="false"/>
+                <property name="minexectime" value="0"/>
+                <property name="maxexectime" value="0"/>
+            </category>
+            <category name="authority">
+                <property name="responsibility" type="java.lang.Boolean" value="false"/>
+                <property name="authority" type="java.lang.Boolean" value="false"/>
+            </category>
+            <category name="criticality">
+                <property name="criticality" type="java.lang.Integer" value="0"/>
+            </category>
+        </categories>
+    </coreproperties>
+</task>
+                            </operator>
+                            <description>View Comment</description>
+                            <xlproperties/>
+                            <coreproperties>
+<categories>
+    <category name="simulation">
+        <property name="duration" value="false"/>
+        <property name="iterative" value="0"/>
+        <property name="optional" value="false"/>
+        <property name="minexectime" value="0"/>
+        <property name="maxexectime" value="0"/>
+    </category>
+    <category name="authority">
+        <property name="responsibility" type="java.lang.Boolean" value="false"/>
+        <property name="authority" type="java.lang.Boolean" value="false"/>
+    </category>
+    <category name="criticality">
+        <property name="criticality" type="java.lang.Integer" value="0"/>
+    </category>
+</categories>
+                            </coreproperties>
+                        </task>
+                        <task copy="false" id="t9" type="abstract" knowledgeproceduraltype="">
+                            <graphics>
+<graphic folded="false">
+    <position x="245" y="164"/>
+</graphic>
+                            </graphics>
+                            <description>Delete Comment</description>
+                            <xlproperties/>
+                            <coreproperties>
+<categories>
+    <category name="simulation">
+        <property name="duration" value="false"/>
+        <property name="iterative" value="0"/>
+        <property name="optional" value="false"/>
+        <property name="minexectime" value="0"/>
+        <property name="maxexectime" value="0"/>
+    </category>
+    <category name="authority">
+        <property name="responsibility" type="java.lang.Boolean" value="false"/>
+        <property name="authority" type="java.lang.Boolean" value="false"/>
+    </category>
+    <category name="criticality">
+        <property name="criticality" type="java.lang.Integer" value="0"/>
+    </category>
+</categories>
+                            </coreproperties>
+                        </task>
+                        <task copy="true" id="t8" type="abstract" knowledgeproceduraltype="">
+                            <graphics>
+<graphic folded="false">
+    <position x="345" y="164"/>
+</graphic>
+                            </graphics>
+                            <description>Create Post</description>
+                            <xlproperties/>
+                            <coreproperties>
+<categories>
+    <category name="simulation">
+        <property name="duration" value="false"/>
+        <property name="iterative" value="0"/>
+        <property name="optional" value="false"/>
+        <property name="minexectime" value="0"/>
+        <property name="maxexectime" value="0"/>
+    </category>
+    <category name="authority">
+        <property name="responsibility" type="java.lang.Boolean" value="false"/>
+        <property name="authority" type="java.lang.Boolean" value="false"/>
+    </category>
+    <category name="criticality">
+        <property name="criticality" type="java.lang.Integer" value="0"/>
+    </category>
+</categories>
+                            </coreproperties>
+                        </task>
+                        <task copy="false" id="t10" type="abstract" knowledgeproceduraltype="">
+                            <graphics>
+<graphic folded="false">
+    <position x="416" y="164"/>
+</graphic>
+                            </graphics>
+                            <description>Report Comment</description>
+                            <xlproperties/>
+                            <coreproperties>
+<categories>
+    <category name="simulation">
+        <property name="duration" value="false"/>
+        <property name="iterative" value="0"/>
+        <property name="optional" value="false"/>
+        <property name="minexectime" value="0"/>
+        <property name="maxexectime" value="0"/>
+    </category>
+    <category name="authority">
+        <property name="responsibility" type="java.lang.Boolean" value="false"/>
+        <property name="authority" type="java.lang.Boolean" value="false"/>
+    </category>
+    <category name="criticality">
+        <property name="criticality" type="java.lang.Integer" value="0"/>
+    </category>
+</categories>
+                            </coreproperties>
+                        </task>
+                        <task copy="false" id="t19" type="abstract" knowledgeproceduraltype="">
+                            <graphics>
+<graphic folded="false">
+    <position x="517" y="164"/>
+</graphic>
+                            </graphics>
+                            <description>Sort Feed</description>
+                            <xlproperties/>
+                            <coreproperties>
+<categories>
+    <category name="simulation">
+        <property name="duration" value="false"/>
+        <property name="iterative" value="0"/>
+        <property name="optional" value="false"/>
+        <property name="minexectime" value="0"/>
+        <property name="maxexectime" value="0"/>
+    </category>
+    <category name="authority">
+        <property name="responsibility" type="java.lang.Boolean" value="false"/>
+        <property name="authority" type="java.lang.Boolean" value="false"/>
+    </category>
+    <category name="criticality">
+        <property name="criticality" type="java.lang.Integer" value="0"/>
+    </category>
+</categories>
+                            </coreproperties>
+                        </task>
+                    </operator>
+                    <description>Log in</description>
+                    <xlproperties/>
+                    <coreproperties>
+                        <categories>
+                            <category name="simulation">
+<property name="duration" value="false"/>
+<property name="iterative" value="0"/>
+<property name="optional" value="false"/>
+<property name="minexectime" value="0"/>
+<property name="maxexectime" value="0"/>
+                            </category>
+                            <category name="authority">
+<property name="responsibility" type="java.lang.Boolean" value="false"/>
+<property name="authority" type="java.lang.Boolean" value="false"/>
+                            </category>
+                            <category name="criticality">
+<property name="criticality" type="java.lang.Integer" value="0"/>
+                            </category>
+                        </categories>
+                    </coreproperties>
+                </task>
+                <task copy="true" id="t3" type="abstract" knowledgeproceduraltype="">
+                    <graphics>
+                        <graphic folded="false">
+                            <position x="283" y="4"/>
+                        </graphic>
+                    </graphics>
+                    <description>Sign Up</description>
+                    <xlproperties/>
+                    <coreproperties>
+                        <categories>
+                            <category name="simulation">
+<property name="duration" value="false"/>
+<property name="iterative" value="0"/>
+<property name="optional" value="false"/>
+<property name="minexectime" value="0"/>
+<property name="maxexectime" value="0"/>
+                            </category>
+                            <category name="authority">
+<property name="responsibility" type="java.lang.Boolean" value="false"/>
+<property name="authority" type="java.lang.Boolean" value="false"/>
+                            </category>
+                            <category name="criticality">
+<property name="criticality" type="java.lang.Integer" value="0"/>
+                            </category>
+                        </categories>
+                    </coreproperties>
+                </task>
+                <task copy="false" id="t4" type="abstract" knowledgeproceduraltype="">
+                    <graphics>
+                        <graphic folded="false">
+                            <position x="349" y="4"/>
+                        </graphic>
+                    </graphics>
+                    <description>View post</description>
+                    <xlproperties/>
+                    <coreproperties>
+                        <categories>
+                            <category name="simulation">
+<property name="duration" value="false"/>
+<property name="iterative" value="0"/>
+<property name="optional" value="false"/>
+<property name="minexectime" value="0"/>
+<property name="maxexectime" value="0"/>
+                            </category>
+                            <category name="authority">
+<property name="responsibility" type="java.lang.Boolean" value="false"/>
+<property name="authority" type="java.lang.Boolean" value="false"/>
+                            </category>
+                            <category name="criticality">
+<property name="criticality" type="java.lang.Integer" value="0"/>
+                            </category>
+                        </categories>
+                    </coreproperties>
+                </task>
+                <task copy="false" id="t17" type="abstract" knowledgeproceduraltype="">
+                    <graphics>
+                        <graphic folded="false">
+                            <position x="415" y="4"/>
+                        </graphic>
+                    </graphics>
+                    <description>View Comment</description>
+                    <xlproperties/>
+                    <coreproperties>
+                        <categories>
+                            <category name="simulation">
+<property name="duration" value="false"/>
+<property name="iterative" value="0"/>
+<property name="optional" value="false"/>
+<property name="minexectime" value="0"/>
+<property name="maxexectime" value="0"/>
+                            </category>
+                            <category name="authority">
+<property name="responsibility" type="java.lang.Boolean" value="false"/>
+<property name="authority" type="java.lang.Boolean" value="false"/>
+                            </category>
+                            <category name="criticality">
+<property name="criticality" type="java.lang.Integer" value="0"/>
+                            </category>
+                        </categories>
+                    </coreproperties>
+                </task>
+                <task copy="false" id="t18" type="abstract" knowledgeproceduraltype="">
+                    <graphics>
+                        <graphic folded="false">
+                            <position x="505" y="4"/>
+                        </graphic>
+                    </graphics>
+                    <description>Sort Feed</description>
+                    <xlproperties/>
+                    <coreproperties>
+                        <categories>
+                            <category name="simulation">
+<property name="duration" value="false"/>
+<property name="iterative" value="0"/>
+<property name="optional" value="false"/>
+<property name="minexectime" value="0"/>
+<property name="maxexectime" value="0"/>
+                            </category>
+                            <category name="authority">
+<property name="responsibility" type="java.lang.Boolean" value="false"/>
+<property name="authority" type="java.lang.Boolean" value="false"/>
+                            </category>
+                            <category name="criticality">
+<property name="criticality" type="java.lang.Integer" value="0"/>
+                            </category>
+                        </categories>
+                    </coreproperties>
+                </task>
+            </operator>
+            <description>Visit site</description>
+            <xlproperties/>
+            <coreproperties>
+                <categories>
+                    <category name="simulation">
+                        <property name="duration" value="false"/>
+                        <property name="iterative" value="0"/>
+                        <property name="optional" value="false"/>
+                        <property name="minexectime" value="0"/>
+                        <property name="maxexectime" value="0"/>
+                    </category>
+                    <category name="authority">
+                        <property name="responsibility" type="java.lang.Boolean" value="false"/>
+                        <property name="authority" type="java.lang.Boolean" value="false"/>
+                    </category>
+                    <category name="criticality">
+                        <property name="criticality" type="java.lang.Integer" value="0"/>
+                    </category>
+                </categories>
+            </coreproperties>
+        </task>
+    </nodes>
+    <datas/>
+    <errors/>
+    <security/>
+    <parameters/>
+    <instancevalues/>
+    <parametersdefinitions/>
+    <mainproperties>
+        <property name="timemanagement" type="fr.irit.ics.circus.hamsters.api.TimeManagement" value="NORMAL"/>
+    </mainproperties>
+</hamsters>
