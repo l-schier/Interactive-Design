@@ -16,19 +16,19 @@
                 <task copy="true" id="t2" type="abstract" knowledgeproceduraltype="">
                     <graphics>
                         <graphic folded="false">
-                            <position x="217" y="4"/>
+                            <position x="219" y="4"/>
                         </graphic>
                     </graphics>
                     <operator id="o3" type="choice" knowledgeproceduraltype="">
                         <graphics>
                             <graphic>
-<position x="230" y="84"/>
+<position x="232" y="84"/>
                             </graphic>
                         </graphics>
                         <task copy="true" id="t5" type="abstract" knowledgeproceduraltype="">
                             <graphics>
 <graphic folded="false">
-    <position x="-136" y="164"/>
+    <position x="-134" y="164"/>
 </graphic>
                             </graphics>
                             <description>Create Post</description>
@@ -55,7 +55,7 @@
                         <task copy="true" id="t7" type="abstract" knowledgeproceduraltype="">
                             <graphics>
 <graphic folded="false">
-    <position x="-65" y="164"/>
+    <position x="-63" y="164"/>
 </graphic>
                             </graphics>
                             <description>Report Post</description>
@@ -82,7 +82,7 @@
                         <task copy="true" id="t6" type="abstract" knowledgeproceduraltype="">
                             <graphics>
 <graphic folded="false">
-    <position x="6" y="164"/>
+    <position x="8" y="164"/>
 </graphic>
                             </graphics>
                             <description>Delete Post</description>
@@ -109,22 +109,22 @@
                         <task copy="true" id="t15" type="abstract" knowledgeproceduraltype="">
                             <graphics>
 <graphic folded="false">
-    <position x="76" y="164"/>
+    <position x="78" y="164"/>
 </graphic>
                             </graphics>
                             <operator id="o4" type="choice" knowledgeproceduraltype="">
 <graphics>
     <graphic>
-        <position x="89" y="244"/>
+        <position x="91" y="244"/>
     </graphic>
 </graphics>
-<task copy="false" id="t11" type="abstract" knowledgeproceduraltype="">
+<task copy="false" id="t20" type="component" knowledgeproceduraltype="">
     <graphics>
         <graphic folded="false">
-            <position x="48" y="324"/>
+            <position x="-28" y="314"/>
         </graphic>
     </graphics>
-    <description>upvote Post</description>
+    <description>Vote [+, Post]</description>
     <xlproperties/>
     <coreproperties>
         <categories>
@@ -145,13 +145,13 @@
         </categories>
     </coreproperties>
 </task>
-<task copy="false" id="t14" type="abstract" knowledgeproceduraltype="">
+<task copy="false" id="t21" type="component" knowledgeproceduraltype="">
     <graphics>
         <graphic folded="false">
-            <position x="118" y="324"/>
+            <position x="58" y="314"/>
         </graphic>
     </graphics>
-    <description>Downvote Post</description>
+    <description>Vote [-, Post]</description>
     <xlproperties/>
     <coreproperties>
         <categories>
@@ -197,7 +197,7 @@
                         <task copy="true" id="t16" type="abstract" knowledgeproceduraltype="">
                             <graphics>
 <graphic folded="false">
-    <position x="142" y="164"/>
+    <position x="144" y="164"/>
 </graphic>
                             </graphics>
                             <operator id="o5" type="choice" knowledgeproceduraltype="">
@@ -206,13 +206,13 @@
         <position x="167" y="244"/>
     </graphic>
 </graphics>
-<task copy="false" id="t12" type="abstract" knowledgeproceduraltype="">
+<task copy="false" id="t22" type="component" knowledgeproceduraltype="">
     <graphics>
         <graphic folded="false">
-            <position x="206" y="324"/>
+            <position x="144" y="314"/>
         </graphic>
     </graphics>
-    <description>upvote Comment</description>
+    <description>Vote [+, Comment]</description>
     <xlproperties/>
     <coreproperties>
         <categories>
@@ -233,13 +233,13 @@
         </categories>
     </coreproperties>
 </task>
-<task copy="false" id="t13" type="abstract" knowledgeproceduraltype="">
+<task copy="false" id="t23" type="component" knowledgeproceduraltype="">
     <graphics>
         <graphic folded="false">
-            <position x="306" y="324"/>
+            <position x="251" y="314"/>
         </graphic>
     </graphics>
-    <description>Downvote Comment</description>
+    <description>Vote [-, Comment]</description>
     <xlproperties/>
     <coreproperties>
         <categories>
@@ -285,7 +285,7 @@
                         <task copy="true" id="t9" type="abstract" knowledgeproceduraltype="">
                             <graphics>
 <graphic folded="false">
-    <position x="232" y="164"/>
+    <position x="231" y="164"/>
 </graphic>
                             </graphics>
                             <description>Delete Comment</description>
@@ -312,7 +312,7 @@
                         <task copy="true" id="t8" type="abstract" knowledgeproceduraltype="">
                             <graphics>
 <graphic folded="false">
-    <position x="332" y="164"/>
+    <position x="331" y="164"/>
 </graphic>
                             </graphics>
                             <description>Create Comment</description>
@@ -339,7 +339,7 @@
                         <task copy="true" id="t10" type="abstract" knowledgeproceduraltype="">
                             <graphics>
 <graphic folded="false">
-    <position x="430" y="164"/>
+    <position x="432" y="164"/>
 </graphic>
                             </graphics>
                             <description>Report Comment</description>
@@ -366,7 +366,7 @@
                         <task copy="true" id="t19" type="abstract" knowledgeproceduraltype="">
                             <graphics>
 <graphic folded="false">
-    <position x="531" y="164"/>
+    <position x="533" y="164"/>
 </graphic>
                             </graphics>
                             <description>Sort Feed</description>
@@ -415,7 +415,7 @@
                 <task copy="true" id="t3" type="abstract" knowledgeproceduraltype="">
                     <graphics>
                         <graphic folded="false">
-                            <position x="283" y="4"/>
+                            <position x="285" y="4"/>
                         </graphic>
                     </graphics>
                     <description>Sign Up</description>
@@ -442,7 +442,7 @@
                 <task copy="true" id="t4" type="abstract" knowledgeproceduraltype="">
                     <graphics>
                         <graphic folded="false">
-                            <position x="349" y="4"/>
+                            <position x="351" y="4"/>
                         </graphic>
                     </graphics>
                     <description>View post</description>
@@ -469,7 +469,7 @@
                 <task copy="true" id="t17" type="abstract" knowledgeproceduraltype="">
                     <graphics>
                         <graphic folded="false">
-                            <position x="415" y="4"/>
+                            <position x="417" y="4"/>
                         </graphic>
                     </graphics>
                     <description>View comment</description>
@@ -496,7 +496,7 @@
                 <task copy="true" id="t18" type="abstract" knowledgeproceduraltype="">
                     <graphics>
                         <graphic folded="false">
-                            <position x="505" y="4"/>
+                            <position x="504" y="4"/>
                         </graphic>
                     </graphics>
                     <description>Sort Feed</description>
