@@ -261,7 +261,7 @@
     </coreproperties>
 </task>
                             </operator>
-                            <description>View Comment</description>
+                            <description>View comment</description>
                             <xlproperties/>
                             <coreproperties>
 <categories>
@@ -472,7 +472,7 @@
                             <position x="415" y="4"/>
                         </graphic>
                     </graphics>
-                    <description>View Comment</description>
+                    <description>View comment</description>
                     <xlproperties/>
                     <coreproperties>
                         <categories>

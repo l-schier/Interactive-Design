@@ -15,12 +15,12 @@
         </hamstersmodel>
     </taskcopy>
     <taskcopy taskcopyname="Insert Text [textfield, textcontent]]" taskcopytype="component"/>
-    <taskcopy taskcopyname="Create Post" taskcopytype="abstract">
-        <hamstersmodel hamstersmodelname="Sign Up" role="Default">
-            <task taskid="t5"/>
-        </hamstersmodel>
+    <taskcopy taskcopyname="Create user" taskcopytype="abstract">
         <hamstersmodel hamstersmodelname="Create Post" role="Default">
             <task taskid="t1"/>
+        </hamstersmodel>
+        <hamstersmodel hamstersmodelname="Sign Up" role="Default">
+            <task taskid="t5"/>
         </hamstersmodel>
     </taskcopy>
     <taskcopy taskcopyname="Create Comment" taskcopytype="abstract">
@@ -37,10 +37,22 @@
             <task taskid="t4"/>
         </hamstersmodel>
     </taskcopy>
-    <taskcopy taskcopyname="View Comment" taskcopytype="abstract">
+    <taskcopy taskcopyname="View comment" taskcopytype="abstract">
         <hamstersmodel hamstersmodelname="Visit site" role="Default">
-            <task taskid="t16"/>
             <task taskid="t17"/>
+            <task taskid="t16"/>
+        </hamstersmodel>
+        <hamstersmodel hamstersmodelname="View comment" role="Default">
+            <task taskid="t1"/>
+        </hamstersmodel>
+    </taskcopy>
+    <taskcopy taskcopyname="Sort Feed" taskcopytype="abstract">
+        <hamstersmodel hamstersmodelname="Visit site" role="Default">
+            <task taskid="t18"/>
+            <task taskid="t19"/>
+        </hamstersmodel>
+        <hamstersmodel hamstersmodelname="Sort Feed" role="Default">
+            <task taskid="t1"/>
         </hamstersmodel>
     </taskcopy>
 </hamsterstaskcopies>

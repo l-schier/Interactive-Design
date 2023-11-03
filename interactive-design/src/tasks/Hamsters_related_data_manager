@@ -7,9 +7,5 @@
     <relateddata type="Software Object" description="Name"/>
     <relateddata type="Software Object" description="Username"/>
     <relateddata type="Software Object" description="Password"/>
-    <relateddata type="Software Object" description="Media">
-        <data dataname="Media" oldname="Media" hamstersmodelname="Create Post" role="Default"/>
-        <data dataname="Media" oldname="Media" hamstersmodelname="Create Comment" role="Default"/>
-        <data dataname="Media" oldname="Media" hamstersmodelname="Upload media" issubroutine="true"/>
-    </relateddata>
+    <relateddata type="Software Object" description="Media"/>
 </hamstersrelateddata>
