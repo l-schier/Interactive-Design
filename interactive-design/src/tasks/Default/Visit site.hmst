@@ -52,7 +52,7 @@
 </categories>
                             </coreproperties>
                         </task>
-                        <task copy="false" id="t7" type="abstract" knowledgeproceduraltype="">
+                        <task copy="true" id="t7" type="abstract" knowledgeproceduraltype="">
                             <graphics>
 <graphic folded="false">
     <position x="-65" y="164"/>
@@ -363,7 +363,7 @@
 </categories>
                             </coreproperties>
                         </task>
-                        <task copy="false" id="t19" type="abstract" knowledgeproceduraltype="">
+                        <task copy="true" id="t19" type="abstract" knowledgeproceduraltype="">
                             <graphics>
 <graphic folded="false">
     <position x="531" y="164"/>
@@ -493,7 +493,7 @@
                         </categories>
                     </coreproperties>
                 </task>
-                <task copy="false" id="t18" type="abstract" knowledgeproceduraltype="">
+                <task copy="true" id="t18" type="abstract" knowledgeproceduraltype="">
                     <graphics>
                         <graphic folded="false">
                             <position x="505" y="4"/>

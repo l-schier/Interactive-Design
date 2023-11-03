@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<hamsters xmlns="http://www.irit.fr/ICS/HAMSTERS/7.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Report Post" version="7" xsi:schemaLocation="http://www.irit.fr/ICS/HAMSTERS/7.0 https://www.irit.fr/recherches/ICS/xsd/hamsters/v7/v7.xsd">
+<hamsters xmlns="http://www.irit.fr/ICS/HAMSTERS/7.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Report Comment" version="7" xsi:schemaLocation="http://www.irit.fr/ICS/HAMSTERS/7.0 https://www.irit.fr/recherches/ICS/xsd/hamsters/v7/v7.xsd">
     <nodes>
-        <task copy="true" id="t1" type="abstract">
+        <task copy="false" id="t8" type="abstract">
             <graphics>
                 <graphic folded="false">
-                    <position x="326" y="17"/>
+                    <position x="228" y="32"/>
                 </graphic>
             </graphics>
             <operator id="o1" type="enable" knowledgeproceduraltype="">
                 <graphics>
                     <graphic>
-                        <position x="341" y="97"/>
+                        <position x="258" y="112"/>
                     </graphic>
                 </graphics>
-                <task copy="false" id="t2" type="interactive_output" knowledgeproceduraltype="">
+                <task copy="false" id="t7" type="interactive_output" knowledgeproceduraltype="">
                     <graphics>
                         <graphic folded="false">
-                            <position x="-38" y="177"/>
+                            <position x="-121" y="192"/>
                         </graphic>
                     </graphics>
                     <description>Display offensive Post</description>
@@ -40,10 +40,10 @@
                         </categories>
                     </coreproperties>
                 </task>
-                <task copy="false" id="t3" type="cognitive" knowledgeproceduraltype="">
+                <task copy="false" id="t6" type="cognitive" knowledgeproceduraltype="">
                     <graphics>
                         <graphic folded="false">
-                            <position x="89" y="177"/>
+                            <position x="6" y="192"/>
                         </graphic>
                     </graphics>
                     <description>Recognize offensive content</description>
@@ -67,10 +67,10 @@
                         </categories>
                     </coreproperties>
                 </task>
-                <task copy="false" id="t4" type="interactive_input" knowledgeproceduraltype="">
+                <task copy="false" id="t5" type="interactive_input" knowledgeproceduraltype="">
                     <graphics>
                         <graphic folded="false">
-                            <position x="248" y="177"/>
+                            <position x="165" y="192"/>
                         </graphic>
                     </graphics>
                     <description>Click report post</description>
@@ -94,10 +94,10 @@
                         </categories>
                     </coreproperties>
                 </task>
-                <task copy="false" id="t5" type="inputouput" knowledgeproceduraltype="">
+                <task copy="false" id="t4" type="inputouput" knowledgeproceduraltype="">
                     <graphics>
                         <graphic folded="false">
-                            <position x="343" y="177"/>
+                            <position x="260" y="192"/>
                         </graphic>
                     </graphics>
                     <description>Promt user to confirm</description>
@@ -121,10 +121,10 @@
                         </categories>
                     </coreproperties>
                 </task>
-                <task copy="false" id="t8" type="interactive_output" knowledgeproceduraltype="">
+                <task copy="false" id="t9" type="interactive_output" knowledgeproceduraltype="">
                     <graphics>
                         <graphic folded="false">
-                            <position x="525" y="177"/>
+                            <position x="471" y="192"/>
                         </graphic>
                     </graphics>
                     <description>Display post has been reported promt</description>
@@ -151,13 +151,13 @@
                 <operator id="o2" type="enable" knowledgeproceduraltype="">
                     <graphics>
                         <graphic>
-                            <position x="467" y="177"/>
+                            <position x="411" y="192"/>
                         </graphic>
                     </graphics>
-                    <task copy="false" id="t6" type="input" knowledgeproceduraltype="">
+                    <task copy="false" id="t3" type="input" knowledgeproceduraltype="">
                         <graphics>
                             <graphic folded="false">
-<position x="381" y="287"/>
+<position x="309" y="272"/>
                             </graphic>
                         </graphics>
                         <description>Get selected post</description>
@@ -181,10 +181,10 @@
                             </categories>
                         </coreproperties>
                     </task>
-                    <task copy="false" id="t7" type="system" knowledgeproceduraltype="">
+                    <task copy="false" id="t2" type="system" knowledgeproceduraltype="">
                         <graphics>
                             <graphic folded="false">
-<position x="483" y="287"/>
+<position x="411" y="272"/>
                             </graphic>
                         </graphics>
                         <description>Log report for post in system</description>
@@ -210,7 +210,7 @@
                     </task>
                 </operator>
             </operator>
-            <description>Report Post</description>
+            <description>Report Comment</description>
             <xlproperties/>
             <coreproperties>
                 <categories>
