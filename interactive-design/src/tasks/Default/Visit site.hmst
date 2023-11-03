@@ -282,7 +282,7 @@
 </categories>
                             </coreproperties>
                         </task>
-                        <task copy="false" id="t9" type="abstract" knowledgeproceduraltype="">
+                        <task copy="true" id="t9" type="abstract" knowledgeproceduraltype="">
                             <graphics>
 <graphic folded="false">
     <position x="232" y="164"/>
