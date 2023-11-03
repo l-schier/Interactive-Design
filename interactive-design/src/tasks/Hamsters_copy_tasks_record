@@ -1,29 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hamsterstaskcopies xmlns="http://www.irit.fr/ICS/HAMSTERSTASKCOPIES/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2" xsi:schemaLocation="http://www.irit.fr/ICS/HAMSTERSTASKCOPIES/2.0 https://www.irit.fr/recherches/ICS/xsd/hamsters/taskcopies/v2/v2.xsd">
-    <taskcopy taskcopyname="Log in" taskcopytype="abstract">
-        <hamstersmodel hamstersmodelname="Log in" role="Default">
-            <task taskid="t5"/>
-        </hamstersmodel>
+    <taskcopy taskcopyname="Insert Name" taskcopytype="abstract">
         <hamstersmodel hamstersmodelname="Sign Up" role="Default">
             <task taskid="t2"/>
         </hamstersmodel>
+        <hamstersmodel hamstersmodelname="Log in" role="Default">
+            <task taskid="t5"/>
+        </hamstersmodel>
     </taskcopy>
-    <taskcopy taskcopyname="Sign Up" taskcopytype="abstract">
+    <taskcopy taskcopyname="Create username" taskcopytype="abstract">
         <hamstersmodel hamstersmodelname="Sign Up" role="Default">
             <task taskid="t1"/>
-        </hamstersmodel>
-        <hamstersmodel hamstersmodelname="Sign Up" role="Default">
             <task taskid="t3"/>
         </hamstersmodel>
     </taskcopy>
     <taskcopy taskcopyname="Insert Text [textfield, textcontent]]" taskcopytype="component"/>
     <taskcopy taskcopyname="Create Post" taskcopytype="abstract">
+        <hamstersmodel hamstersmodelname="Sign Up" role="Default">
+            <task taskid="t5"/>
+        </hamstersmodel>
         <hamstersmodel hamstersmodelname="Create Post" role="Default">
             <task taskid="t1"/>
         </hamstersmodel>
-        <hamstersmodel hamstersmodelname="Sign Up" role="Default">
-            <task taskid="t5"/>
+    </taskcopy>
+    <taskcopy taskcopyname="Create Comment" taskcopytype="abstract">
+        <hamstersmodel hamstersmodelname="Visit site" role="Default">
             <task taskid="t8"/>
+        </hamstersmodel>
+        <hamstersmodel hamstersmodelname="Create Comment" role="Default">
+            <task taskid="t1"/>
+        </hamstersmodel>
+    </taskcopy>
+    <taskcopy taskcopyname="View post" taskcopytype="abstract">
+        <hamstersmodel hamstersmodelname="Visit site" role="Default">
+            <task taskid="t15"/>
+            <task taskid="t4"/>
         </hamstersmodel>
     </taskcopy>
 </hamsterstaskcopies>
