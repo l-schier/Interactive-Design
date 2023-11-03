@@ -1,133 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<hamsters xmlns="http://www.irit.fr/ICS/HAMSTERS/7.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Report Comment" version="7" xsi:schemaLocation="http://www.irit.fr/ICS/HAMSTERS/7.0 https://www.irit.fr/recherches/ICS/xsd/hamsters/v7/v7.xsd">
+<hamsters xmlns="http://www.irit.fr/ICS/HAMSTERS/7.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Delete Post" version="7" xsi:schemaLocation="http://www.irit.fr/ICS/HAMSTERS/7.0 https://www.irit.fr/recherches/ICS/xsd/hamsters/v7/v7.xsd">
     <nodes>
-        <task copy="true" id="t8" type="abstract">
+        <task copy="true" id="t1" type="abstract">
             <graphics>
                 <graphic folded="false">
-                    <position x="228" y="32"/>
+                    <position x="339" y="79"/>
                 </graphic>
             </graphics>
             <operator id="o1" type="enable" knowledgeproceduraltype="">
                 <graphics>
                     <graphic>
-                        <position x="258" y="112"/>
+                        <position x="354" y="159"/>
                     </graphic>
                 </graphics>
+                <task copy="false" id="t3" type="cognitive" knowledgeproceduraltype="">
+                    <graphics>
+                        <graphic folded="false">
+                            <position x="-84" y="239"/>
+                        </graphic>
+                    </graphics>
+                    <description>Decide on a post to delete</description>
+                    <xlproperties/>
+                    <coreproperties>
+                        <categories>
+                            <category name="simulation">
+<property name="duration" value="false"/>
+<property name="iterative" value="0"/>
+<property name="optional" value="false"/>
+<property name="minexectime" value="0"/>
+<property name="maxexectime" value="0"/>
+                            </category>
+                            <category name="authority">
+<property name="responsibility" type="java.lang.Boolean" value="false"/>
+<property name="authority" type="java.lang.Boolean" value="false"/>
+                            </category>
+                            <category name="criticality">
+<property name="criticality" type="java.lang.Integer" value="0"/>
+                            </category>
+                        </categories>
+                    </coreproperties>
+                </task>
+                <task copy="false" id="t2" type="interactive_input" knowledgeproceduraltype="">
+                    <graphics>
+                        <graphic folded="false">
+                            <position x="65" y="239"/>
+                        </graphic>
+                    </graphics>
+                    <description>Click on post</description>
+                    <xlproperties/>
+                    <coreproperties>
+                        <categories>
+                            <category name="simulation">
+<property name="duration" value="false"/>
+<property name="iterative" value="0"/>
+<property name="optional" value="false"/>
+<property name="minexectime" value="0"/>
+<property name="maxexectime" value="0"/>
+                            </category>
+                            <category name="authority">
+<property name="responsibility" type="java.lang.Boolean" value="false"/>
+<property name="authority" type="java.lang.Boolean" value="false"/>
+                            </category>
+                            <category name="criticality">
+<property name="criticality" type="java.lang.Integer" value="0"/>
+                            </category>
+                        </categories>
+                    </coreproperties>
+                </task>
+                <task copy="false" id="t8" type="interactive_output" knowledgeproceduraltype="">
+                    <graphics>
+                        <graphic folded="false">
+                            <position x="142" y="239"/>
+                        </graphic>
+                    </graphics>
+                    <description>Display post</description>
+                    <xlproperties/>
+                    <coreproperties>
+                        <categories>
+                            <category name="simulation">
+<property name="duration" value="false"/>
+<property name="iterative" value="0"/>
+<property name="optional" value="false"/>
+<property name="minexectime" value="0"/>
+<property name="maxexectime" value="0"/>
+                            </category>
+                            <category name="authority">
+<property name="responsibility" type="java.lang.Boolean" value="false"/>
+<property name="authority" type="java.lang.Boolean" value="false"/>
+                            </category>
+                            <category name="criticality">
+<property name="criticality" type="java.lang.Integer" value="0"/>
+                            </category>
+                        </categories>
+                    </coreproperties>
+                </task>
+                <task copy="false" id="t4" type="interactive_input" knowledgeproceduraltype="">
+                    <graphics>
+                        <graphic folded="false">
+                            <position x="216" y="239"/>
+                        </graphic>
+                    </graphics>
+                    <description>Click on delete post</description>
+                    <xlproperties/>
+                    <coreproperties>
+                        <categories>
+                            <category name="simulation">
+<property name="duration" value="false"/>
+<property name="iterative" value="0"/>
+<property name="optional" value="false"/>
+<property name="minexectime" value="0"/>
+<property name="maxexectime" value="0"/>
+                            </category>
+                            <category name="authority">
+<property name="responsibility" type="java.lang.Boolean" value="false"/>
+<property name="authority" type="java.lang.Boolean" value="false"/>
+                            </category>
+                            <category name="criticality">
+<property name="criticality" type="java.lang.Integer" value="0"/>
+                            </category>
+                        </categories>
+                    </coreproperties>
+                </task>
+                <task copy="false" id="t9" type="inputouput" knowledgeproceduraltype="">
+                    <graphics>
+                        <graphic folded="false">
+                            <position x="330" y="239"/>
+                        </graphic>
+                    </graphics>
+                    <description>Promt user for confirmation</description>
+                    <xlproperties/>
+                    <coreproperties>
+                        <categories>
+                            <category name="simulation">
+<property name="duration" value="false"/>
+<property name="iterative" value="0"/>
+<property name="optional" value="false"/>
+<property name="minexectime" value="0"/>
+<property name="maxexectime" value="0"/>
+                            </category>
+                            <category name="authority">
+<property name="responsibility" type="java.lang.Boolean" value="false"/>
+<property name="authority" type="java.lang.Boolean" value="false"/>
+                            </category>
+                            <category name="criticality">
+<property name="criticality" type="java.lang.Integer" value="0"/>
+                            </category>
+                        </categories>
+                    </coreproperties>
+                </task>
                 <task copy="false" id="t7" type="interactive_output" knowledgeproceduraltype="">
                     <graphics>
                         <graphic folded="false">
-                            <position x="-121" y="192"/>
+                            <position x="555" y="239"/>
                         </graphic>
                     </graphics>
-                    <description>Display offensive Post</description>
-                    <xlproperties/>
-                    <coreproperties>
-                        <categories>
-                            <category name="simulation">
-<property name="duration" value="false"/>
-<property name="iterative" value="0"/>
-<property name="optional" value="false"/>
-<property name="minexectime" value="0"/>
-<property name="maxexectime" value="0"/>
-                            </category>
-                            <category name="authority">
-<property name="responsibility" type="java.lang.Boolean" value="false"/>
-<property name="authority" type="java.lang.Boolean" value="false"/>
-                            </category>
-                            <category name="criticality">
-<property name="criticality" type="java.lang.Integer" value="0"/>
-                            </category>
-                        </categories>
-                    </coreproperties>
-                </task>
-                <task copy="false" id="t6" type="cognitive" knowledgeproceduraltype="">
-                    <graphics>
-                        <graphic folded="false">
-                            <position x="6" y="192"/>
-                        </graphic>
-                    </graphics>
-                    <description>Recognize offensive content</description>
-                    <xlproperties/>
-                    <coreproperties>
-                        <categories>
-                            <category name="simulation">
-<property name="duration" value="false"/>
-<property name="iterative" value="0"/>
-<property name="optional" value="false"/>
-<property name="minexectime" value="0"/>
-<property name="maxexectime" value="0"/>
-                            </category>
-                            <category name="authority">
-<property name="responsibility" type="java.lang.Boolean" value="false"/>
-<property name="authority" type="java.lang.Boolean" value="false"/>
-                            </category>
-                            <category name="criticality">
-<property name="criticality" type="java.lang.Integer" value="0"/>
-                            </category>
-                        </categories>
-                    </coreproperties>
-                </task>
-                <task copy="false" id="t5" type="interactive_input" knowledgeproceduraltype="">
-                    <graphics>
-                        <graphic folded="false">
-                            <position x="165" y="192"/>
-                        </graphic>
-                    </graphics>
-                    <description>Click report post</description>
-                    <xlproperties/>
-                    <coreproperties>
-                        <categories>
-                            <category name="simulation">
-<property name="duration" value="false"/>
-<property name="iterative" value="0"/>
-<property name="optional" value="false"/>
-<property name="minexectime" value="0"/>
-<property name="maxexectime" value="0"/>
-                            </category>
-                            <category name="authority">
-<property name="responsibility" type="java.lang.Boolean" value="false"/>
-<property name="authority" type="java.lang.Boolean" value="false"/>
-                            </category>
-                            <category name="criticality">
-<property name="criticality" type="java.lang.Integer" value="0"/>
-                            </category>
-                        </categories>
-                    </coreproperties>
-                </task>
-                <task copy="false" id="t4" type="inputouput" knowledgeproceduraltype="">
-                    <graphics>
-                        <graphic folded="false">
-                            <position x="260" y="192"/>
-                        </graphic>
-                    </graphics>
-                    <description>Promt user to confirm</description>
-                    <xlproperties/>
-                    <coreproperties>
-                        <categories>
-                            <category name="simulation">
-<property name="duration" value="false"/>
-<property name="iterative" value="0"/>
-<property name="optional" value="false"/>
-<property name="minexectime" value="0"/>
-<property name="maxexectime" value="0"/>
-                            </category>
-                            <category name="authority">
-<property name="responsibility" type="java.lang.Boolean" value="false"/>
-<property name="authority" type="java.lang.Boolean" value="false"/>
-                            </category>
-                            <category name="criticality">
-<property name="criticality" type="java.lang.Integer" value="0"/>
-                            </category>
-                        </categories>
-                    </coreproperties>
-                </task>
-                <task copy="false" id="t9" type="interactive_output" knowledgeproceduraltype="">
-                    <graphics>
-                        <graphic folded="false">
-                            <position x="471" y="192"/>
-                        </graphic>
-                    </graphics>
-                    <description>Display post has been reported promt</description>
+                    <description>Display confirmation that post has been deleted</description>
                     <xlproperties/>
                     <coreproperties>
                         <categories>
@@ -151,16 +178,16 @@
                 <operator id="o2" type="enable" knowledgeproceduraltype="">
                     <graphics>
                         <graphic>
-                            <position x="411" y="192"/>
+                            <position x="503" y="239"/>
                         </graphic>
                     </graphics>
-                    <task copy="false" id="t3" type="input" knowledgeproceduraltype="">
+                    <task copy="false" id="t5" type="input" knowledgeproceduraltype="">
                         <graphics>
                             <graphic folded="false">
-<position x="309" y="272"/>
+<position x="386" y="319"/>
                             </graphic>
                         </graphics>
-                        <description>Get selected post</description>
+                        <description>Find selected post in storage</description>
                         <xlproperties/>
                         <coreproperties>
                             <categories>
@@ -181,13 +208,13 @@
                             </categories>
                         </coreproperties>
                     </task>
-                    <task copy="false" id="t2" type="system" knowledgeproceduraltype="">
+                    <task copy="false" id="t10" type="system" knowledgeproceduraltype="">
                         <graphics>
                             <graphic folded="false">
-<position x="411" y="272"/>
+<position x="551" y="319"/>
                             </graphic>
                         </graphics>
-                        <description>Log report for post in system</description>
+                        <description>Delete post</description>
                         <xlproperties/>
                         <coreproperties>
                             <categories>
@@ -210,7 +237,7 @@
                     </task>
                 </operator>
             </operator>
-            <description>Report Comment</description>
+            <description>Delete Post</description>
             <xlproperties/>
             <coreproperties>
                 <categories>

@@ -63,4 +63,20 @@
             <task taskid="t1"/>
         </hamstersmodel>
     </taskcopy>
+    <taskcopy taskcopyname="Report Comment" taskcopytype="abstract">
+        <hamstersmodel hamstersmodelname="Visit site" role="Default">
+            <task taskid="t10"/>
+        </hamstersmodel>
+        <hamstersmodel hamstersmodelname="Report Comment" role="Default">
+            <task taskid="t8"/>
+        </hamstersmodel>
+    </taskcopy>
+    <taskcopy taskcopyname="Delete Post" taskcopytype="abstract">
+        <hamstersmodel hamstersmodelname="Visit site" role="Default">
+            <task taskid="t6"/>
+        </hamstersmodel>
+        <hamstersmodel hamstersmodelname="Delete Post" role="Default">
+            <task taskid="t1"/>
+        </hamstersmodel>
+    </taskcopy>
 </hamsterstaskcopies>
