@@ -1,9 +1,11 @@
+// Home.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Home = ({ loggedInUser }) => {
   return (
-    <div>
+    <div style={{ height: '100vh', width: '100%', overflow: 'hidden' }}>
       <nav style={{ backgroundColor: '#355070', color: '#EAAC8B', padding: '10px' }}>
         <Link to="/">My App</Link>
         {loggedInUser ? (
@@ -16,7 +18,7 @@ const Home = ({ loggedInUser }) => {
         )}
       </nav>
 
-      <div style={{ padding: '20px', backgroundColor: '#212529', color: '#EAAC8B' }}>
+      <div style={{ padding: '20px', backgroundColor: '#212529', color: '#EAAC8B', height: '100%' }}>
         <h1>Welcome to My App!</h1>
 
         <div>

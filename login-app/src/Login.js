@@ -22,12 +22,12 @@ const Login = ({ setLoggedInUser }) => {
   };
 
   return (
-    <div>
+    <div style={{ height: '100vh', width: '100%', overflow: 'hidden' }}>
       <nav style={{ backgroundColor: '#355070', color: '#EAAC8B', padding: '10px' }}>
         <Link to="/">My App</Link>
       </nav>
 
-      <div style={{ padding: '20px', backgroundColor: '#212529', color: '#EAAC8B' }}>
+      <div style={{ padding: '20px', backgroundColor: '#212529', color: '#EAAC8B', height: 'calc(100% - 40px)' }}>
         <h1>Login</h1>
 
         <form>
