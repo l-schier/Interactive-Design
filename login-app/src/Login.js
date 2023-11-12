@@ -1,19 +1,22 @@
+// Login.js
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import { getUsers } from './usersData'; // Import getUsers
 
-const Login = () => {
+const Login = ({ setLoggedInUser }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Simulate authentication (replace this with your actual authentication logic)
-    if (username === 'demo' && password === 'password') {
-      // If the login is successful, you can redirect the user to another page
-      navigate('/dashboard');
+    const users = getUsers();
+    const user = users.find((user) => user.username === username && user.password === password);
+
+    if (user) {
+      setLoggedInUser(user); // Set the logged-in user
+      navigate('/');
     } else {
-      // If the login fails, display an error message
       setError('Invalid username or password');
     }
   };

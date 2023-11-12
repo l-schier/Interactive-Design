@@ -1,15 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Home = () => {
+const Home = ({ loggedInUser }) => {
   return (
     <div>
       <nav style={{ backgroundColor: '#355070', color: '#EAAC8B', padding: '10px' }}>
         <Link to="/">My App</Link>
-        <div style={{ float: 'right' }}>
-          <Link to="/login" style={{ marginRight: '10px', color: '#EAAC8B' }}>Login</Link>
-          <Link to="/signup" style={{ color: '#EAAC8B' }}>Signup</Link>
-        </div>
+        {loggedInUser ? (
+          <span style={{ float: 'right', marginRight: '10px' }}>Welcome, {loggedInUser.username}!</span>
+        ) : (
+          <div style={{ float: 'right' }}>
+            <Link to="/login" style={{ marginRight: '10px', color: '#EAAC8B' }}>Login</Link>
+            <Link to="/signup" style={{ color: '#EAAC8B' }}>Signup</Link>
+          </div>
+        )}
       </nav>
 
       <div style={{ padding: '20px', backgroundColor: '#212529', color: '#EAAC8B' }}>

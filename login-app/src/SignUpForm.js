@@ -1,17 +1,24 @@
 // SignUpForm.js
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import { getUsers, addUser } from './usersData'; // Import getUsers and addUser
 
 const SignUpForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate(); // Initialize the navigation function
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleSignUp = () => {
-    // You would typically handle user registration here.
-    // For simplicity, we'll navigate to the '/welcome' route when the sign-up button is clicked.
     if (username && password) {
-      navigate('/welcome');
+      if (getUsers().some((user) => user.username === username)) {
+        setError('Username is already taken. Please choose another one.');
+      } else {
+        addUser({ username, password });
+        navigate('/');
+      }
+    } else {
+      setError('Please enter both username and password.');
     }
   };
 
@@ -49,6 +56,7 @@ const SignUpForm = () => {
           Sign Up
         </button>
       </form>
+      {error && <div style={{ color: 'red', marginTop: '10px' }}>{error}</div>}
       <div style={{ marginTop: '10px', color: '#EAAC8B' }}>
         Already have an account? <Link to="/login">Log in here</Link>.
       </div>
