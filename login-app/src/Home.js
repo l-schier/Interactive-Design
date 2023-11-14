@@ -10,9 +10,32 @@ const Home = ({ loggedInUser }) => {
   // Function to handle adding a new post
   const handleAddPost = (newPost) => {
     newPost.image = newPost.file ? URL.createObjectURL(newPost.file) : null;
+    newPost.upvotes = 0;
+    newPost.downvotes = 0;
+    newPost.hasVoted = false;
     setPosts([...posts, newPost]);
     // Reset the form fields after adding a post
     // You can do this by passing a callback to NewPostForm to clear the fields
+  };
+
+  // Function to handle upvoting a post
+  const handleUpvote = (index) => {
+    if (loggedInUser && !posts[index].hasVoted) {
+      const updatedPosts = [...posts];
+      updatedPosts[index].upvotes += 1;
+      updatedPosts[index].hasVoted = true;
+      setPosts(updatedPosts);
+    }
+  };
+
+  // Function to handle downvoting a post
+  const handleDownvote = (index) => {
+    if (loggedInUser && !posts[index].hasVoted) {
+      const updatedPosts = [...posts];
+      updatedPosts[index].downvotes += 1;
+      updatedPosts[index].hasVoted = true;
+      setPosts(updatedPosts);
+    }
   };
 
   return (
@@ -39,7 +62,13 @@ const Home = ({ loggedInUser }) => {
 
         {/* Map through posts and render each post using the Post component */}
         {posts.map((post, index) => (
-          <Post key={index} post={post} />
+          <Post
+            key={index}
+            post={post}
+            onUpvote={() => handleUpvote(index)}
+            onDownvote={() => handleDownvote(index)}
+            loggedInUser={loggedInUser}
+          />
         ))}
       </div>
     </div>
