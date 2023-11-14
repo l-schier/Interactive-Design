@@ -16,7 +16,7 @@ const Home = ({ loggedInUser }) => {
   };
 
   return (
-    <div style={{ height: '100vh', width: '100%', overflow: 'hidden' }}>
+    <div style={{ height: '100vh', width: '100%', backgroundColor: '#212529', color: '#EAAC8B' }}>
       <nav style={{ backgroundColor: '#355070', color: '#EAAC8B', padding: '10px' }}>
         <Link to="/">My App</Link>
         {loggedInUser ? (
@@ -29,7 +29,7 @@ const Home = ({ loggedInUser }) => {
         )}
       </nav>
 
-      <div style={{ padding: '20px', backgroundColor: '#212529', color: '#EAAC8B', height: '100%', overflowY: 'auto' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
         <h1>Welcome to My App!</h1>
 
         {/* Conditionally render NewPostForm if the user is logged in */}

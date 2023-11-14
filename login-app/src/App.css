@@ -1,3 +1,9 @@
+/* App.css */
+
+html, body {
+  margin: 0; /* Set margin to zero to cover the entire viewport */
+}
+
 .App {
   text-align: center;
 }
@@ -15,7 +21,7 @@
 
 .App-header {
   background-color: #282c34;
-  height: 100vh; /* Set height to 100vh instead of min-height */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

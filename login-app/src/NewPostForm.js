@@ -1,3 +1,4 @@
+// NewPostForm.js
 import React, { useState } from 'react';
 
 const NewPostForm = ({ onAddPost }) => {
@@ -20,10 +21,10 @@ const NewPostForm = ({ onAddPost }) => {
   };
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '20px', marginBottom: '20px' }}>
-      <div style={{ width: '150px', height: '150px', border: '1px solid #D9D9D9', padding: '10px' }}>
+    <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
+      <div style={{ marginRight: '20px' }}>
         {file ? (
-          <img src={URL.createObjectURL(file)} alt="Uploaded" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+          <img src={URL.createObjectURL(file)} alt="Uploaded" style={{ width: '100px', height: '100px', objectFit: 'cover' }} />
         ) : (
           <label htmlFor="fileInput" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <span style={{ marginBottom: '5px' }}>Upload Image</span>
