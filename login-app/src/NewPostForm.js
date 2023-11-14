@@ -10,31 +10,60 @@ const NewPostForm = ({ onAddPost }) => {
     setFile(selectedFile);
   };
 
-  const handleAddClick = () => {
-    // Assuming you want to include title, content, and file in the post
+  const handleAddPost = () => {
     const newPost = { title, content, file };
     onAddPost(newPost);
-    // Reset form fields
+    // Reset the form fields after adding a post
     setTitle('');
     setContent('');
     setFile(null);
   };
 
   return (
-    <div style={{ marginBottom: '20px' }}>
-      <h2>Create a New Post</h2>
-      <label>Title:</label>
-      <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
-      <br />
-      <label>Content:</label>
-      <textarea value={content} onChange={(e) => setContent(e.target.value)} />
-      <br />
-      <label>Upload Image:</label>
-      <input type="file" onChange={handleFileChange} />
-      <br />
-      <button type="button" onClick={handleAddClick}>
-        Add Post
-      </button>
+    <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '20px', marginBottom: '20px' }}>
+      <div style={{ width: '150px', height: '150px', border: '1px solid #D9D9D9', padding: '10px' }}>
+        {file ? (
+          <img src={URL.createObjectURL(file)} alt="Uploaded" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+        ) : (
+          <label htmlFor="fileInput" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <span style={{ marginBottom: '5px' }}>Upload Image</span>
+            <input
+              type="file"
+              id="fileInput"
+              accept="image/*"
+              onChange={handleFileChange}
+              style={{ display: 'none' }}
+            />
+            <span style={{ color: '#61dafb', cursor: 'pointer' }}>Choose File</span>
+          </label>
+        )}
+      </div>
+      <div>
+        <label>
+          Title:
+          <input
+            type="text"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            placeholder="Enter post title"
+            style={{ padding: '5px', width: '100%' }}
+          />
+        </label>
+        <br />
+        <label>
+          Content:
+          <textarea
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+            placeholder="Enter post content"
+            style={{ padding: '5px', width: '100%', height: '100px' }}
+          />
+        </label>
+        <br />
+        <button type="button" onClick={handleAddPost} style={{ padding: '5px' }}>
+          Add Post
+        </button>
+      </div>
     </div>
   );
 };
