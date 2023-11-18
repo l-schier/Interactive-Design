@@ -1,7 +1,6 @@
 // Login.js
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { getUsers } from './usersData'; // Import getUsers
 
 const Login = ({ setLoggedInUser }) => {
   const [username, setUsername] = useState('');
@@ -9,15 +8,26 @@ const Login = ({ setLoggedInUser }) => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  const handleLogin = () => {
-    const users = getUsers();
-    const user = users.find((user) => user.username === username && user.password === password);
+  const handleLogin = async () => {
+    try {
+      const response = await fetch('http://localhost:5000/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+        credentials: 'include', // include credentials (cookies) in the request
+      });
 
-    if (user) {
-      setLoggedInUser(user); // Set the logged-in user
-      navigate('/');
-    } else {
-      setError('Invalid username or password');
+      if (response.ok) {
+        setLoggedInUser({ username }); // Set the logged-in user
+        navigate('/');
+      } else {
+        setError('Invalid username or password');
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+      setError('An error occurred during login');
     }
   };
 

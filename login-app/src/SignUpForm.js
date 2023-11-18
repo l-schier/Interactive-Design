@@ -1,7 +1,5 @@
-// SignUpForm.js
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { getUsers, addUser } from './usersData'; // Import getUsers and addUser
 
 const SignUpForm = () => {
   const [username, setUsername] = useState('');
@@ -9,16 +7,27 @@ const SignUpForm = () => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  const handleSignUp = () => {
-    if (username && password) {
-      if (getUsers().some((user) => user.username === username)) {
-        setError('Username is already taken. Please choose another one.');
-      } else {
-        addUser({ username, password });
-        navigate('/');
+  const handleSignUp = async () => {
+    try {
+      const response = await fetch('http://localhost:5000/register', {
+        method: 'POST',
+        mode: 'cors', // Add this line
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+      });
+
+
+      if (!response.ok) {
+        const data = await response.json();
+        setError(data.error || 'Failed to sign up');
+        return;
       }
-    } else {
-      setError('Please enter both username and password.');
+
+      navigate('/login');
+    } catch (error) {
+      setError('An unexpected error occurred.');
     }
   };
 
