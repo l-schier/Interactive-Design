@@ -1,5 +1,5 @@
 // Home.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Post from './Post';
 import NewPostForm from './NewPostForm';
@@ -7,34 +7,79 @@ import NewPostForm from './NewPostForm';
 const Home = ({ loggedInUser }) => {
   const [posts, setPosts] = useState([]);
 
-  // Function to handle adding a new post
-  const handleAddPost = (newPost) => {
-    newPost.image = newPost.file ? URL.createObjectURL(newPost.file) : null;
-    newPost.upvotes = 0;
-    newPost.downvotes = 0;
-    newPost.hasVoted = false;
-    setPosts([...posts, newPost]);
-    // Reset the form fields after adding a post
-    // You can do this by passing a callback to NewPostForm to clear the fields
-  };
+  // Fetch posts from the backend when the component mounts
+  useEffect(() => {
+    onGetPosts();
+  }, []);
+
+// Function to handle adding a new post
+const handleAddPost = async (newPost) => {
+  // Create a FormData object to send the file along with other data
+  const formData = new FormData();
+  formData.append('username', loggedInUser.username);
+  formData.append('title', newPost.title);
+  formData.append('content', newPost.content);
+  formData.append('file', newPost.file); // Assuming 'file' is the key on the server for the uploaded file
+
+  // Send a request to create a new post with the FormData
+  const response = await fetch('http://localhost:5000/createPost', {
+    method: 'POST',
+    body: formData,
+  });
+
+  if (response.ok) {
+    // If the post is created successfully, fetch the updated list of posts
+    onGetPosts();
+  } else {
+    // Handle the error case if the post creation fails
+    console.error('Failed to create a post');
+  }
+};
+
 
   // Function to handle upvoting a post
-  const handleUpvote = (index) => {
-    if (loggedInUser && !posts[index].hasVoted) {
-      const updatedPosts = [...posts];
-      updatedPosts[index].upvotes += 1;
-      updatedPosts[index].hasVoted = true;
-      setPosts(updatedPosts);
+  const handleUpvote = async (postId) => {
+    // Make a fetch call to your backend to upvote the post
+    const response = await fetch(`http://localhost:5000/upvote/${postId}`, {
+      method: 'PUT',
+    });
+
+    if (response.ok) {
+      // If the upvote is successful, update the posts
+      onGetPosts();
+    } else {
+      // Handle error case
+      console.error('Error upvoting post');
     }
   };
 
   // Function to handle downvoting a post
-  const handleDownvote = (index) => {
-    if (loggedInUser && !posts[index].hasVoted) {
-      const updatedPosts = [...posts];
-      updatedPosts[index].downvotes += 1;
-      updatedPosts[index].hasVoted = true;
-      setPosts(updatedPosts);
+  const handleDownvote = async (postId) => {
+    // Make a fetch call to your backend to downvote the post
+    const response = await fetch(`http://localhost:5000/downvote/${postId}`, {
+      method: 'PUT',
+    });
+
+    if (response.ok) {
+      // If the downvote is successful, update the posts
+      onGetPosts();
+    } else {
+      // Handle error case
+      console.error('Error downvoting post');
+    }
+  };
+
+  // Function to fetch posts from the backend
+  const onGetPosts = async () => {
+    // Make a fetch call to your backend to get posts
+    const response = await fetch('http://localhost:5000/getPosts');
+
+    if (response.ok) {
+      const postsData = await response.json();
+      setPosts(postsData);
+    } else {
+      // Handle error case
+      console.error('Error fetching posts');
     }
   };
 
@@ -61,12 +106,12 @@ const Home = ({ loggedInUser }) => {
         <h2>User Posts</h2>
 
         {/* Map through posts and render each post using the Post component */}
-        {posts.map((post, index) => (
+        {posts.map((post) => (
           <Post
-            key={index}
+            key={post.id} // Assuming each post has a unique identifier
             post={post}
-            onUpvote={() => handleUpvote(index)}
-            onDownvote={() => handleDownvote(index)}
+            onUpvote={() => handleUpvote(post.id)}
+            onDownvote={() => handleDownvote(post.id)}
             loggedInUser={loggedInUser}
           />
         ))}

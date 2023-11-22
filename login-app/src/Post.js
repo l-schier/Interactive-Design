@@ -1,13 +1,19 @@
 // Post.js
 import React from 'react';
-import upArrow from './up-arrow.png';  // Import your up arrow image
-import downArrow from './down-arrow.png';  // Import your down arrow image
+import upArrow from './up-arrow.png'; // Import your up arrow image
+import downArrow from './down-arrow.png'; // Import your down arrow image
 
 const Post = ({ post, onUpvote, onDownvote, loggedInUser }) => {
   return (
     <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
       <div style={{ marginRight: '20px' }}>
-        {post.image && <img src={post.image} alt="Post" style={{ width: '100px', height: '100px', objectFit: 'cover' }} />}
+        {post.image && (
+          <img
+            src={`http://localhost:5000/${post.image}`} // Assuming the server is running on localhost:5000
+            alt="Post"
+            style={{ width: '100px', height: '100px', objectFit: 'cover' }}
+          />
+        )}
       </div>
       <div>
         <h3>{post.title}</h3>
@@ -16,7 +22,11 @@ const Post = ({ post, onUpvote, onDownvote, loggedInUser }) => {
           {/* Upvote button */}
           {loggedInUser && !post.hasVoted && (
             <button onClick={onUpvote}>
-              <img src={upArrow} alt="Upvote" style={{ width: '20px', height: '20px', cursor: 'pointer' }} />
+              <img
+                src={upArrow}
+                alt="Upvote"
+                style={{ width: '20px', height: '20px', cursor: 'pointer' }}
+              />
             </button>
           )}
 
@@ -26,7 +36,11 @@ const Post = ({ post, onUpvote, onDownvote, loggedInUser }) => {
           {/* Downvote button */}
           {loggedInUser && !post.hasVoted && (
             <button onClick={onDownvote}>
-              <img src={downArrow} alt="Downvote" style={{ width: '20px', height: '20px', cursor: 'pointer' }} />
+              <img
+                src={downArrow}
+                alt="Downvote"
+                style={{ width: '20px', height: '20px', cursor: 'pointer' }}
+              />
             </button>
           )}
         </div>
