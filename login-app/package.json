@@ -38,7 +38,6 @@
   },
   "devDependencies": {
     "@cucumber/cucumber": "^10.0.1",
-    "cucumber": "^6.0.7",
     "selenium-webdriver": "^4.16.0"
   }
 }
